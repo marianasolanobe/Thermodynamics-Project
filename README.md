@@ -1,46 +1,50 @@
-# Trabalho – Termodinâmica
+👉 Pode substituir TODO o conteúdo do seu README.md por este abaixo.
+
+# Trabalho – Termodinâmica I  
 **Universidade de Brasília (UnB)**
-
-##  Descrição do Projeto
-
-Este projeto foi desenvolvido como parte do trabalho da disciplina **Termodinâmica I** e tem como objetivo implementar, em linguagem de programação, um sistema para:
-
-- Consulta de propriedades termodinâmicas da **água** e do **ar**
-- Modelagem e análise dos ciclos **Brayton**, **Rankine** e do **ciclo combinado Brayton–Rankine**
-- Aplicação de interpolação linear para obtenção de propriedades fora dos pontos tabelados
-
-O código foi inspirado no funcionamento do software **TermoTab** e utiliza tabelas termodinâmicas clássicas, conforme exigido no enunciado do trabalho.
 
 ---
 
-##  Requisitos para Execução
+## 📌 Descrição do Projeto
 
-###  Sistema Operacional
+Este projeto foi desenvolvido como parte do trabalho da disciplina **Termodinâmica I** e tem como objetivo a implementação, em linguagem de programação, de um sistema capaz de:
+
+- Consultar propriedades termodinâmicas da **água** e do **ar**
+- Resolver os ciclos **Brayton**, **Rankine** e o **ciclo combinado Brayton–Rankine**
+- Aplicar **interpolação** quando necessário para propriedades não tabeladas
+
+O código foi inspirado no funcionamento do software **TermoTab** e utiliza tabelas termodinâmicas clássicas, conforme solicitado no enunciado do trabalho.
+
+---
+
+## ⚙️ Requisitos para Execução
+
+### Sistema Operacional
 - Linux, Windows ou macOS
 
-###  Linguagem
-- Python **3.10 ou superior**
+### Linguagem
+- **Python 3.10 ou superior**
 
 Verifique sua versão com:
 ```bash
 python --version
 
- Dependências
+📦 Dependências
 
 O projeto utiliza as seguintes bibliotecas Python:
 
-numpy
+NumPy
 
-pandas
+Pandas
 
- Como instalar as dependências
+🔽 Instalação das Dependências
 
-Recomenda-se o uso de um ambiente virtual (venv).
+Recomenda-se o uso de um ambiente virtual (venv) para evitar conflitos com outras instalações Python.
 
-1. Criar o ambiente virtual:
+1️⃣ Criar o ambiente virtual
 python -m venv .venv
 
-2. Ativar o ambiente virtual:
+2️⃣ Ativar o ambiente virtual
 
 Linux / macOS
 
@@ -51,24 +55,24 @@ Windows
 
 .venv\Scripts\activate
 
-3. Instalar as bibliotecas necessárias:
+3️⃣ Instalar as bibliotecas necessárias
 pip install numpy pandas
 
- Como Executar o Projeto
+▶️ Como Executar o Projeto
 
-Após instalar as dependências, execute o programa principal:
+Após ativar o ambiente virtual e instalar as dependências, execute o programa principal:
 
 python main.py
 
 
 O menu interativo será exibido no terminal.
 
- Estrutura do Projeto
+🧠 Estrutura do Projeto
 Thermodynamics-Project/
 │
-├── main.py                     # Programa principal (menu e interação)
+├── main.py                     # Menu principal e interação com o usuário
 │
-├── ciclos/                     # Implementação dos ciclos termodinâmicos
+├── ciclos/                     # Modelagem dos ciclos termodinâmicos
 │   ├── brayton.py              # Ciclo Brayton
 │   ├── rankine.py              # Ciclo Rankine
 │   ├── combined.py             # Ciclo combinado Brayton–Rankine
@@ -76,7 +80,7 @@ Thermodynamics-Project/
 │   ├── print_rankine.py        # Impressão formatada do Rankine
 │   └── print_combined.py       # Impressão formatada do ciclo combinado
 │
-├── propriedades/               # Cálculo de propriedades termodinâmicas
+├── propriedades/               # Propriedades termodinâmicas
 │   ├── agua_saturada.py        # Água saturada
 │   ├── agua_superaquecida.py   # Vapor superaquecido
 │   ├── ar_gas_ideal.py         # Ar como gás ideal
@@ -84,15 +88,15 @@ Thermodynamics-Project/
 │   └── estado.py               # Classe Estado termodinâmico
 │
 ├── tabelas/                    # Tabelas termodinâmicas
-│   ├── tabela_A-4.txt          # Água saturada (T)
-│   ├── tabela_A-5.txt          # Água saturada (P)
+│   ├── tabela_A-4.txt          # Água saturada (em função da temperatura)
+│   ├── tabela_A-5.txt          # Água saturada (em função da pressão)
 │   ├── tabela_A-6/             # Vapor superaquecido
 │   └── tabela_A-7/             # Ar (gás ideal)
 │
 ├── README.md                   # Descrição do projeto
-└── manual.pdf                  # Manual de uso do código
+└── manual.pdf                  # Manual detalhado de uso
 
- Menu Principal – Funcionalidades
+📋 Menu Principal
 
 Ao executar o programa, o seguinte menu é apresentado:
 
@@ -104,7 +108,7 @@ Ao executar o programa, o seguinte menu é apresentado:
 
 🔹 Opção 1 – Propriedades da água
 
-Permite consultar propriedades da água na região de saturação, a partir da pressão e do título.
+Consulta propriedades da água na região de saturação, a partir da pressão e do título.
 
 🔹 Opção 2 – Ciclo Rankine
 
@@ -120,11 +124,11 @@ Eficiência térmica
 
 🔹 Opção 3 – Ciclo Brayton
 
-Resolve um ciclo Brayton ideal utilizando ar como gás ideal, fornecendo:
+Resolve um ciclo Brayton ideal com ar tratado como gás ideal, fornecendo:
 
 Estados termodinâmicos
 
-Trabalhos do compressor e turbina
+Trabalhos do compressor e da turbina
 
 Calores
 
@@ -136,17 +140,17 @@ Modela um ciclo combinado no qual o calor residual do Brayton é utilizado em um
 
 Vazão mássica de vapor
 
-Potência de cada ciclo
+Potência individual dos ciclos
 
 Potência total
 
 Eficiência global
 
-O usuário pode optar por usar valores padrão ou inserir dados personalizados.
+O usuário pode inserir dados próprios ou utilizar valores padrão do trabalho.
 
- Modelagem Termodinâmica
+📐 Modelagem Termodinâmica
 
-Água:
+Água
 
 Líquido comprimido
 
@@ -154,29 +158,25 @@ Mistura saturada
 
 Vapor superaquecido
 
-Ar:
+Ar
 
 Tratado como gás ideal
 
-Interpolação:
+Interpolação
 
-Linear (1ª ordem) quando necessário
+Linear (1ª ordem), conforme solicitado no enunciado
 
-Hipóteses:
+Hipóteses
 
 Regime permanente
 
 Processos ideais (isentropia em turbinas e compressores)
 
- Resultados
+📊 Observações Finais
 
-Os resultados obtidos são fisicamente coerentes e compatíveis com valores encontrados na literatura de Termodinâmica, incluindo o artigo de referência da UFRJ utilizado para validação do ciclo combinado.
+O projeto foi desenvolvido com foco em clareza, organização e coerência física
 
- Observações Finais
-
-O projeto foi desenvolvido com foco em clareza, organização e robustez
-
-A interface em terminal foi escolhida para garantir portabilidade e fácil avaliação
+A interface em terminal foi escolhida para facilitar a avaliação e garantir portabilidade
 
 O código pode ser facilmente estendido para incluir:
 
@@ -186,6 +186,4 @@ Regeneração
 
 Eficiências isentrópicas reais
 
- Autores: Mariana Solona De Brito Elias e Carlos Henrique de Paiva Munis
-
-Trabalho desenvolvido para a disciplina Termodinâmica – UnB.
+👨‍🎓 Autores
