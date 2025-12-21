@@ -40,8 +40,8 @@ Instalação das Dependências
 
 Recomenda-se o uso de um ambiente virtual (venv) para evitar conflitos com outras instalações Python.
 
-```bash
 Criar o ambiente virtual
+```bash
 python -m venv .venv
 ```
 
@@ -115,85 +115,92 @@ Ao executar o programa, o seguinte menu é apresentado:
 0 - Sair
 ```
 
-🔹 Opção 1 – Propriedades da água
+### Funcionalidades do Programa
 
-Consulta propriedades da água na região de saturação, a partir da pressão e do título.
+O programa foi desenvolvido de forma interativa por meio de um menu em terminal, permitindo a consulta de propriedades termodinâmicas e a resolução de ciclos de potência estudados em Termodinâmica I.
 
-🔹 Opção 2 – Ciclo Rankine
+#### Opção 1 – Propriedades da água (saturada)
 
-Resolve um ciclo Rankine simples com vapor superaquecido, fornecendo:
+Permite consultar as propriedades da água na região de saturação a partir da pressão e do título (qualidade).
+São retornadas automaticamente temperatura, volume específico, energia interna, entalpia, entropia e título.
 
-Estados termodinâmicos
+#### Opção 2 – Ciclo Rankine
 
-Trabalhos
+Resolve um ciclo Rankine ideal com vapor superaquecido, considerando bomba e turbina isentrópicas.
+O programa fornece:
 
-Calor fornecido
+* Estados termodinâmicos do ciclo
 
-Eficiência térmica
+* Trabalho da turbina
 
-🔹 Opção 3 – Ciclo Brayton
+* Trabalho da bomba
 
-Resolve um ciclo Brayton ideal com ar tratado como gás ideal, fornecendo:
+* Calor fornecido
 
-Estados termodinâmicos
+* Eficiência térmica
 
-Trabalhos do compressor e da turbina
+#### Opção 3 – Ciclo Brayton
 
-Calores
+Resolve um ciclo Brayton ideal, tratando o ar como gás ideal.
+O programa fornece:
 
-Eficiência térmica
+* Estados termodinâmicos
 
-🔹 Opção 4 – Ciclo combinado Brayton–Rankine
+* Trabalhos do compressor e da turbina
 
-Modela um ciclo combinado no qual o calor residual do Brayton é utilizado em um ciclo Rankine (HRSG ideal), fornecendo:
+* Calores de entrada e saída
 
-Vazão mássica de vapor
+* Eficiência térmica
 
-Potência individual dos ciclos
+#### Opção 4 – Ciclo combinado Brayton–Rankine
 
-Potência total
+Modela um ciclo combinado no qual o calor residual do ciclo Brayton é utilizado em um ciclo Rankine (HRSG ideal).
+O programa fornece:
 
-Eficiência global
+* Vazão mássica de vapor
 
-O usuário pode inserir dados próprios ou utilizar valores padrão do trabalho.
+* Potência individual dos ciclos
 
-Modelagem Termodinâmica
+* Potência total do sistema
 
-Água
+* Eficiência térmica global
 
-Líquido comprimido
+O usuário pode utilizar valores padrão ou inserir dados próprios.
 
-Mistura saturada
+### Modelagem Termodinâmica
+#### Água
 
-Vapor superaquecido
+A água é modelada por meio de tabelas termodinâmicas, contemplando:
 
-Ar
+* Líquido comprimido
 
-Tratado como gás ideal
+* Mistura saturada
 
-Interpolação
+* Vapor superaquecido
 
-Linear (1ª ordem), conforme solicitado no enunciado
+São obtidas as propriedades: temperatura, pressão, volume específico, energia interna, entalpia, entropia e título (quando aplicável).
 
-Hipóteses
+#### Ar
 
-Regime permanente
+O ar é tratado como gás ideal, conforme a modelagem clássica de ciclos Brayton.
 
-Processos ideais (isentropia em turbinas e compressores)
+### Interpolação Numérica
 
-Observações Finais
+Quando necessário, é aplicada interpolação linear (polinômio de 1ª ordem), conforme solicitado no enunciado.
 
-O projeto foi desenvolvido com foco em clareza, organização e coerência física
+### Hipóteses Adotadas
 
-A interface em terminal foi escolhida para facilitar a avaliação e garantir portabilidade
+* Regime permanente
 
-O código pode ser facilmente estendido para incluir:
+* Processos ideais
 
-Reaquecimento
+* Turbinas e compressores isentrópicos
 
-Regeneração
+* Perdas desprezadas
 
-Eficiências isentrópicas reais
+### Observações Funcionalidades
+
+O projeto foi desenvolvido com em clareza, organização e coerência física. A interface em terminal foi escolhida para facilitar a avaliação e garantir portabilidade.
 
 Autores 
 * Mariana Solano de Brito Elias
