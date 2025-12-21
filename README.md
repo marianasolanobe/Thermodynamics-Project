@@ -115,6 +115,8 @@ Ao executar o programa, o seguinte menu é apresentado:
 0 - Sair
 ```
 
+---
+
 ### Funcionalidades do Programa
 
 O programa foi desenvolvido de forma interativa por meio de um menu em terminal, permitindo a consulta de propriedades termodinâmicas e a resolução de ciclos de potência estudados em Termodinâmica I.
@@ -200,7 +202,9 @@ Quando necessário, é aplicada interpolação linear (polinômio de 1ª ordem),
 
 ### Observações Funcionalidades
 
-O projeto foi desenvolvido com em clareza, organização e coerência física. A interface em terminal foi escolhida para facilitar a avaliação e garantir portabilidade.
+O projeto foi desenvolvido com foco em clareza, organização e coerência física. A interface em terminal foi escolhida para facilitar a avaliação e garantir portabilidade.
+
+---
 
 Autores 
 * Mariana Solano de Brito Elias
