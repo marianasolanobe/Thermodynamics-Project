@@ -1,11 +1,9 @@
-👉 Pode substituir TODO o conteúdo do seu README.md por este abaixo.
-
 # Trabalho – Termodinâmica I  
 **Universidade de Brasília (UnB)**
 
 ---
 
-## 📌 Descrição do Projeto
+## Descrição do Projeto
 
 Este projeto foi desenvolvido como parte do trabalho da disciplina **Termodinâmica I** e tem como objetivo a implementação, em linguagem de programação, de um sistema capaz de:
 
@@ -17,7 +15,7 @@ O código foi inspirado no funcionamento do software **TermoTab** e utiliza tabe
 
 ---
 
-## ⚙️ Requisitos para Execução
+## Requisitos para Execução
 
 ### Sistema Operacional
 - Linux, Windows ou macOS
@@ -29,7 +27,7 @@ Verifique sua versão com:
 ```bash
 python --version
 
-📦 Dependências
+Dependências
 
 O projeto utiliza as seguintes bibliotecas Python:
 
@@ -37,14 +35,14 @@ NumPy
 
 Pandas
 
-🔽 Instalação das Dependências
+Instalação das Dependências
 
 Recomenda-se o uso de um ambiente virtual (venv) para evitar conflitos com outras instalações Python.
 
-1️⃣ Criar o ambiente virtual
+Criar o ambiente virtual
 python -m venv .venv
 
-2️⃣ Ativar o ambiente virtual
+Ativar o ambiente virtual
 
 Linux / macOS
 
@@ -55,19 +53,20 @@ Windows
 
 .venv\Scripts\activate
 
-3️⃣ Instalar as bibliotecas necessárias
+Instalar as bibliotecas necessárias
 pip install numpy pandas
 
-▶️ Como Executar o Projeto
+Como Executar o Projeto
 
 Após ativar o ambiente virtual e instalar as dependências, execute o programa principal:
 
 python main.py
-
+```
 
 O menu interativo será exibido no terminal.
 
-🧠 Estrutura do Projeto
+Estrutura do Projeto
+```bash
 Thermodynamics-Project/
 │
 ├── main.py                     # Menu principal e interação com o usuário
@@ -95,17 +94,20 @@ Thermodynamics-Project/
 │
 ├── README.md                   # Descrição do projeto
 └── manual.pdf                  # Manual detalhado de uso
+```
 
-📋 Menu Principal
+Menu Principal
 
 Ao executar o programa, o seguinte menu é apresentado:
 
+```
 1 - Consultar propriedades da água (saturada)
 2 - Calcular ciclo Rankine
 3 - Calcular ciclo Brayton
 4 - Calcular ciclo combinado Brayton–Rankine
 0 - Sair
-
+```
+```
 🔹 Opção 1 – Propriedades da água
 
 Consulta propriedades da água na região de saturação, a partir da pressão e do título.
@@ -148,7 +150,7 @@ Eficiência global
 
 O usuário pode inserir dados próprios ou utilizar valores padrão do trabalho.
 
-📐 Modelagem Termodinâmica
+Modelagem Termodinâmica
 
 Água
 
@@ -172,7 +174,7 @@ Regime permanente
 
 Processos ideais (isentropia em turbinas e compressores)
 
-📊 Observações Finais
+Observações Finais
 
 O projeto foi desenvolvido com foco em clareza, organização e coerência física
 
@@ -186,4 +188,6 @@ Regeneração
 
 Eficiências isentrópicas reais
 
-👨‍🎓 Autores
+Autores 
+* Mariana Solano de Brito Elias
+* Carlos Henrique De Paiva Munis
