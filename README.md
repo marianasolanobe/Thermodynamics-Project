@@ -70,6 +70,11 @@ Após ativar o ambiente virtual e instalar as dependências, execute o programa 
 python main.py
 ```
 
+Para desativar o ambiente virtual após já ter executado a aplicação
+```bash
+deactivate
+```
+
 O menu interativo será exibido no terminal.
 
 Estrutura do Projeto
