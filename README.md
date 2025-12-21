@@ -26,33 +26,39 @@ O código foi inspirado no funcionamento do software **TermoTab** e utiliza tabe
 Verifique sua versão com:
 ```bash
 python --version
+```
+```
 
 Dependências
 
 O projeto utiliza as seguintes bibliotecas Python:
 
-NumPy
+* NumPy
 
-Pandas
+* Pandas
 
 Instalação das Dependências
 
 Recomenda-se o uso de um ambiente virtual (venv) para evitar conflitos com outras instalações Python.
 
+```bash
 Criar o ambiente virtual
 python -m venv .venv
+```
 
 Ativar o ambiente virtual
 
 Linux / macOS
-
+```bash
 source .venv/bin/activate
-
+```
 
 Windows
-
+```bash
 .venv\Scripts\activate
+```
 
+```
 Instalar as bibliotecas necessárias
 pip install numpy pandas
 
@@ -60,6 +66,7 @@ Como Executar o Projeto
 
 Após ativar o ambiente virtual e instalar as dependências, execute o programa principal:
 
+```bash
 python main.py
 ```
 
