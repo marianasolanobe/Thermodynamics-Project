@@ -27,7 +27,6 @@ Verifique sua versão com:
 ```bash
 python --version
 ```
-```
 
 Dependências
 
@@ -58,9 +57,10 @@ Windows
 .venv\Scripts\activate
 ```
 
-```
 Instalar as bibliotecas necessárias
+```bash
 pip install numpy pandas
+```
 
 Como Executar o Projeto
 
@@ -107,14 +107,14 @@ Menu Principal
 
 Ao executar o programa, o seguinte menu é apresentado:
 
-```
+```bash
 1 - Consultar propriedades da água (saturada)
 2 - Calcular ciclo Rankine
 3 - Calcular ciclo Brayton
 4 - Calcular ciclo combinado Brayton–Rankine
 0 - Sair
 ```
-```
+
 🔹 Opção 1 – Propriedades da água
 
 Consulta propriedades da água na região de saturação, a partir da pressão e do título.
